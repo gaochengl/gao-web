@@ -44,7 +44,7 @@ $(function () {
     $.ajax({
       method: "POST",
       url: "/api/login",
-      data: $("#form_login").serialize(),
+      data: $(this).serialize(),
       success: function (res) {
         console.log(res);
         if (res.code !== 0) {
